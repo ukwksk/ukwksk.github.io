@@ -1,0 +1,22 @@
+.body-wrapper {
+  margin: 30px;
+}
+
+article {
+  margin-bottom: 20px;
+}
+
+article>h1 {
+  font-size: 28px;
+  border-bottom: 2px;
+  border-bottom-width: thick;
+  border-color: #888;
+}
+
+.content-list li * {
+  font-size: 20px;
+}
+
+a.twitter-timeline {
+  height: 100px;
+}
