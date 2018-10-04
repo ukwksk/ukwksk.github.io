@@ -5,6 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>ukwksk.io</title>
+  <!-- <link rel="stylesheet" href="ress.css"> -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
   <link rel="stylesheet" href="main.css">
@@ -12,10 +13,24 @@
 
 <body>
   <header>
-    <nav class="light-blue lighten-5">
+    <nav class="hide-on-large-only nav-extended light-blue lighten-4">
       <div class="nav-wrapper">
         <a href="#" class="brand-logo">ukwksk.io</a>
-        <ul id="nav-mobile" class="right hide-on-med-and-down">
+      </div>
+      <div class="nav-content">
+        <ul id="nav-mobile" class="tabs light-blue lighten-5">
+          <li class="tab"><a href="https://twitter.com/ukwksk" target="_blank">Twitter</a></li>
+          <li class="tab"><a href="http://ukwksk.hatenablog.com/" target="_blank">Blog</a></li>
+          <li class="tab"><a href="https://githug.com/ukwksk" target="_blank">GitHub</a></li>
+          <li class="tab"><a href="https://hub.docker.com/u/ukwksk/" target="_blank">DockerHub</a></li>
+          <li class="tab"><a href="https://qiita.com/ukwksk" target="_blank">Qiita</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav class="hide-on-med-and-down light-blue lighten-4">
+      <div class="nav-wrapper">
+        <a href="#" class="brand-logo">ukwksk.io</a>
+        <ul id="nav-desktop" class="right">
           <li><a href="https://twitter.com/ukwksk" target="_blank">Twitter</a></li>
           <li><a href="http://ukwksk.hatenablog.com/" target="_blank">Blog</a></li>
           <li><a href="https://githug.com/ukwksk" target="_blank">GitHub</a></li>
@@ -26,41 +41,63 @@
     </nav>
   </header>
 
-  <div class="row main-wrapper">
-    <div class="col m12 l8">
-      <div class="container main">
-        <div class="row contents-list">
-          <article id="hatena">
-            <h5>Blog</h5>
-            <ul class="content-list">
-              <li class="link">
+  <div class="container">
+    <div class="row">
+      <div class="col s12 m12 l4">
+        <!-- <div class="container"> -->
+        <article id="hatena">
+          <h5>Blog</h5>
+          <ul class="content-list">
+            <li class="link">
+              <p>
                 <a href="http://ukwksk.hatenablog.com/entry/2018/09/21/014424">Dockerのpython公式Imageを使ってみた</a>
-              </li>
-              <li class="link">
+              </p>
+            </li>
+            <li class="link">
+              <p>
                 <a href="http://ukwksk.hatenablog.com/entry/2018/08/11/020947">Done is better than perfect.</a>
-              </li>
-            </ul>
-          </article>
-        </div>
+              </p>
+            </li>
+          </ul>
+        </article>
+        <!-- </div> -->
       </div>
-    </div>
 
-    <div class="col m12 l3">
-      <article id="twitter">
-        <h5>Twitter</h5>
-        <div class="embed-wrapper">
-          <a class="twitter-timeline" href="https://twitter.com/ukwksk?ref_src=twsrc%5Etfw" data-height="500" data-width="400">Tweets by ukwksk</a>
-          <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-        </div>
-      </article>
+      <div class="col s12 m12 l4">
+        <!-- <div class="container"> -->
+        <article id="qiita">
+          <h5>Qiita</h5>
+          <p>工事中</p>
+        </article>
+        <!-- </div> -->
+      </div>
+
+      <div class="col s12 m12 l4">
+        <!-- <div class="container"> -->
+        <article id="twitter">
+          <h5>Twitter</h5>
+          <div class="embed-wrapper center-align">
+            <a class="twitter-timeline" href="https://twitter.com/ukwksk?ref_src=twsrc%5Etfw" data-height="500" data-width="400">Tweets by ukwksk</a>
+            <!-- <a class="twitter-timeline" href="https://twitter.com/ukwksk?ref_src=twsrc%5Etfw" data-height="500" data-width="400">Tweets by ukwksk</a> -->
+            <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+          </div>
+        </article>
+        <!-- </div> -->
+      </div>
     </div>
   </div>
 
-  <footer class="page-footer">
+  <footer class="page-footer light-blue lighten-4">
+    <div class="container">
+      <div class="row ">
+        <div class="col m12">
+          <a class="grey-text text-lighten-4 right" href="#">Go To Top</a>
+        </div>
+      </div>
+    </div>
     <div class="footer-copyright light-blue lighten-3">
-      <div class="container">
+      <div class="container center-align">
         © 2018 ukwksk.io
-        <a class="grey-text text-lighten-4 right" href="#">Go To Top</a>
       </div>
     </div>
   </footer>
